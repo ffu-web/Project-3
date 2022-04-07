@@ -1,0 +1,137 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+}
+
+.topnav {
+overflow: hidden;
+background-color:rgb(29, 26, 24);
+}
+
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topnav .icon {
+display: none;
+}
+
+
+#main-header{
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 5%;
+}
+
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 1.25rem;
+}
+
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
+}
+
+#logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
+}
+main h1 {
+  text-align: center;
+  color: rgb(238, 164, 80);
+  font-size: 3rem;
+}
+
+#latest-products {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+#latest-products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.food-item {
+  background-color: rgb(228, 206, 182);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.food-item img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.food-item-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.food-item h2 {
+  margin: 0 0 1rem 0;
+}
+
+.btn {
+  background-color: rgb(228, 157, 44);
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(221, 134, 34);
+}
+
+@media screen and (max-width: 600px) {
+.topnav a {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position:fixed; top: 15px; right: 0;}
+.topnav.responsive .icon {
+  position: relative;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  padding: 15px;
+  text-align: right;
+  }
+  #menus{
+    text-align: left; 
+  }
+}

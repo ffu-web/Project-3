@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webfood</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header id="main-header">
-      <a href="index.html" id="logo">WebFood</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Browse Meals</a>
-          </li>
-          <li>
-            <a href="">My Orders</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Browse Our Delicious Meals</h1>
-      <section id="latest-products">
-        <ul>
-          <li class="food-item">
-            <article>
-              <img src="images/risotto.jpg" alt="Delicious Risotto" />
-              <div class="food-item-content">
-                <h2>Lorem ipsum dolor sit.</h2>
-                <a href="" class="btn">Add to Cart</a>
-              </div>
-            </article>
-          </li>
-          <li class="food-item">
-            <article>
-              <img
-                src="images/cheeseburgers.jpg"
-                alt="Delicious cheeseburgers"
-              />
-              <div class="food-item-content">
-                <h2>Lorem ipsum dolor sit.</h2>
-                <a href="" class="btn">Add to Cart</a>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full responsive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="main-header">
+  <a href="#" id="logo">WebFood</a>
+  <nav class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+     <a href="#browse" id="menus">Browse Meals</a> 
+     <a href="#myorders" id="menus">My Orders</a>
+  </a>
+  </ul>
+</nav>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</header>
+<main>
+    <h1>Browse Our Delicious Meals</h1>
+    <section id="latest-products">
+      <ul>
+        <li class="food-item">
+          <article>
+            <img src="images/risotto.jpg" alt="Delicious Risotto" />
+            <div class="food-item-content">
+              <h2>Lorem ipsum dolor sit.</h2>
+              <a href="" class="btn">Add to Cart</a>
+            </div>
+          </article>
+        </li>
+        <li class="food-item">
+          <article>
+            <img
+              src="images/cheeseburgers.jpg"
+              alt="Delicious cheeseburgers"
+            />
+            <div class="food-item-content">
+              <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+              <a href="" class="btn">Add to Cart</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
 </html>
